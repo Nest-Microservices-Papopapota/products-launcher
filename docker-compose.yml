@@ -17,7 +17,7 @@ services:
   products-ms:
     build: ./products-ms
     volumes:
-      - ./products-ms/src:/usr/src/app/src
+      - ./products-ms/src/products-data:/usr/src/app/src
     command: yarn start:dev
     environment:
       - PORT=3001
